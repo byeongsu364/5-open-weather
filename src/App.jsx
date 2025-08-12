@@ -53,7 +53,7 @@ function App() {
     <section style={{ background: bg, minHeight: '100vh', transition: 'background .3s ease' }}>
       <div className='app' >
     <div className='app'>
-      <h1>김병수의 날씨맵</h1>
+      <h1>김병수의 날씨앱</h1>
       <div className="input-wrap">
         <input
           ref={inputRef}
@@ -61,7 +61,7 @@ function App() {
           onChange={onChangeInput}
           onKeyUp={onKeyup}
           type="text"
-          placeholder='도시이름을 입력하세요' />
+          placeholder='도시이름을 입력하세요(예 : Seoul, Busan' />
         <button onClick={handleSearch} disabled={loading}>{loading ? "검색중..." : "검색"}</button>
       </div>
       {err && <p className='error'>{err}</p>}
